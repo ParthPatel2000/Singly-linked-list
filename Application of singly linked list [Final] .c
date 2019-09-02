@@ -314,35 +314,36 @@ void deleteat(int pos)
 
 void search(int val)
 {
-temp=start;
-int pos=1,flag=0;
-while(temp!=NULL)
-{
-if(val==temp->info)
-{
-printf("The value is found at %d\n",pos);
-flag=1;
-ret=pos;
-break;
-}
-else
-{
-temp=temp->next;
-}
-pos++;
-}
-if(flag==0)
-{
-	printf("THE VALUE IS NOT FOUND\n");}
+     temp=start;
+     int pos=1,flag=0;
+     while(temp!=NULL)
+     {
+	  if(val==temp->info)
+   	  {
+       		printf("The value is found at %d\n",pos);
+		flag=1;
+		ret=pos;
+		break;
+    	  }
+	else
+        {  
+        	temp=temp->next;
+        }
+	pos++;
+     }
+	if(flag==0)
+	{
+	printf("THE VALUE IS NOT FOUND\n");
+	}
 }
 
 void deleteval(int val)
 {
-search(val);
-if(ret!=0)
+	search(val);
+	if(ret!=0)
 {
-deleteat(ret);
-ret=0;
+	deleteat(ret);
+	ret=0;
 }
 }
 
