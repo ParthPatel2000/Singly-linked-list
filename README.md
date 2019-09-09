@@ -22,3 +22,8 @@ they are necessary  to understand and implement the concept of Singly Linked Lis
 9.Deleteat
 10.DELETE BY VALUE
 11.SORT
+
+
+Update for V3.0
+
+it just has a new feature that it can convert binary data inserted to decimal equivalent.
