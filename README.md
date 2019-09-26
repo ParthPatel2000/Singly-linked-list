@@ -27,3 +27,20 @@ they are necessary  to understand and implement the concept of Singly Linked Lis
 Update for V3.0
 
 it just has a new feature that it can convert binary data inserted to decimal equivalent.
+
+
+UPDATE v4.0
+removed useless functions such as insert begining end and delete fo the same.
+ADDED NEW FEATURES;
+
+FREELIST OPTION
+2.COUNT
+3.REVERSE THE ORIGINAL list
+4.REVERSE and COPY to another list
+5.COPY
+6.SPLIT
+NO memory leakes now all the lists are FREED at the end of every session
+PROVIDED YOU USE EXIT
+
+minor change :
+DISPLAY now has to be sent pointer of the list to be displayed
