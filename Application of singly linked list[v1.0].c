@@ -125,7 +125,29 @@ void concatinate()
 		t->next=new;
 	}
 }
-
+void search()
+{
+	struct node *t=start;
+	if(t==0)
+	{
+		printf("The list is empty\n");
+		exit(0);
+	}
+	int no
+	printf("Enter node");
+	scanf(%d,&no);
+	The
+	while(t!=0)
+	{
+		if(t->info==no)
+		{
+			printf("%d-",t->info,t);
+		}
+		else{
+			t=t->next;
+		}
+	};
+}
 
 
 int main()
@@ -136,7 +158,7 @@ int main()
    while(sel!=-1)
    {
    	 printf("\nmenu\n");	
-    printf("\n1.CREATE\n2.DISPLAY\n3.Insert AT End\n4.Concatinate\n5.EXIT\n\nENTER your choice:   ");
+    printf("\n1.CREATE\n2.DISPLAY\n3.Insert AT End\n4.Concatinate\n5.Search\n6.EXIT\n\nENTER your choice:   ");
 	scanf("%d",&sel);
 	switch(sel)
 	{
@@ -148,6 +170,8 @@ int main()
 				break;
 		case 4:concatinate();
 				break;
+		case 5: search();
+			break;
 		case 5: exit(0);				
 	
 	}
